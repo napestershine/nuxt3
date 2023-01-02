@@ -13,4 +13,5 @@ export default defineNuxtConfig({
   ],
   modules: ["@nuxtjs/google-fonts"],
   components: true,
+  ssr: true,
 });
