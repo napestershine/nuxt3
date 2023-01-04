@@ -7,7 +7,7 @@
         </div>
         <div class="col-4 text-center">
           <NuxtLink class="blog-header-logo text-dark" to="/">
-            Recipies Archives
+            Vegan Recipies
           </NuxtLink>
         </div>
         <div class="col-4 d-flex justify-content-end align-items-center">
@@ -38,19 +38,10 @@
     </header>
 
     <div class="nav-scroller py-1 mb-2">
-      <nav class="nav d-flex justify-content-between">
-        <NuxtLink class="p-2 link-secondary" to="#">World</NuxtLink>
-        <NuxtLink class="p-2 link-secondary" to="#">U.S.</NuxtLink>
-        <NuxtLink class="p-2 link-secondary" to="#">Technology</NuxtLink>
-        <NuxtLink class="p-2 link-secondary" to="#">Design</NuxtLink>
-        <NuxtLink class="p-2 link-secondary" to="#">Culture</NuxtLink>
-        <NuxtLink class="p-2 link-secondary" to="#">Business</NuxtLink>
-        <NuxtLink class="p-2 link-secondary" to="#">Politics</NuxtLink>
-        <NuxtLink class="p-2 link-secondary" to="#">Opinion</NuxtLink>
-        <NuxtLink class="p-2 link-secondary" to="#">Science</NuxtLink>
-        <NuxtLink class="p-2 link-secondary" to="#">Health</NuxtLink>
-        <NuxtLink class="p-2 link-secondary" to="#">Style</NuxtLink>
-        <NuxtLink class="p-2 link-secondary" to="#">Travel</NuxtLink>
+      <nav class="nav d-flex justify-content-center">
+        <NuxtLink class="p-2 link-secondary" to="/">Home</NuxtLink>
+        <NuxtLink class="p-2 link-secondary" to="#">Recipes</NuxtLink>
+        <NuxtLink class="p-2 link-secondary" to="/about">About</NuxtLink>
       </nav>
     </div>
   </div>
