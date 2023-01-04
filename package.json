@@ -7,7 +7,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "fix-lint": "npm run lint -- --fix"
+    "lint:fix": "eslint --fix ."
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",
@@ -16,9 +16,7 @@
     "@nuxtjs/google-fonts": "^3.0.0-0",
     "eslint": "^8.31.0",
     "nuxt": "3.0.0",
-    "prettier": "^2.8.1"
-  },
-  "dependencies": {
+    "prettier": "^2.8.1",
     "bootstrap": "^5.2.3"
   }
 }
