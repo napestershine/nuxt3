@@ -1,5 +1,4 @@
 <template>
-
   <main class="container">
     <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
       <div class="col-md-6 px-0">
@@ -12,7 +11,9 @@
           contents.
         </p>
         <p class="lead mb-0">
-          <a href="#" class="text-white fw-bold">Continue reading...</a>
+          <NuxtLink to="#" class="text-white fw-bold"
+            >Continue reading...</NuxtLink
+          >
         </p>
       </div>
     </div>
@@ -30,7 +31,7 @@
               This is a wider card with supporting text below as a natural
               lead-in to additional content.
             </p>
-            <a href="#" class="stretched-link">Continue reading</a>
+            <NuxtLink to="#" class="stretched-link">Continue reading</NuxtLink>
           </div>
           <div class="col-auto d-none d-lg-block">
             <svg
@@ -62,7 +63,7 @@
               This is a wider card with supporting text below as a natural
               lead-in to additional content.
             </p>
-            <a href="#" class="stretched-link">Continue reading</a>
+            <NuxtLink to="#" class="stretched-link">Continue reading</NuxtLink>
           </div>
           <div class="col-auto d-none d-lg-block">
             <svg
@@ -88,9 +89,11 @@
       <div class="col-md-8">
         <h3 class="pb-4 mb-4 fst-italic border-bottom">From the Firehose</h3>
 
-        <article class="blog-post">
+        <NuxtLinkrticle class="blog-post">
           <h2 class="blog-post-title mb-1">Sample blog post</h2>
-          <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+          <p class="blog-post-meta">
+            January 1, 2021 by <NuxtLink to="#">Mark</NuxtLink>
+          </p>
 
           <p>
             This blog post shows a few different types of content that’s
@@ -152,8 +155,9 @@
           <p>
             HTML defines a long list of available inline tags, a complete list
             of which can be found on the
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
-              >Mozilla Developer Network</a
+            <NuxtLink
+              to="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+              >Mozilla Developer Network</NuxtLink
             >.
           </p>
           <ul>
@@ -171,7 +175,8 @@
             </li>
             <li>
               Abbreviations, like
-              <abbr title="HyperText Markup Language">HTML</abbr> should use
+              <NuxtLinkbbr title="HyperText Markup Language">HTML</NuxtLinkbbr>
+              should use
               <code class="language-plaintext highlighter-rouge"
                 >&lt;abbr&gt;</code
               >, with an optional
@@ -231,12 +236,12 @@
             slightly shorter version of the other highly repetitive body text
             used throughout.
           </p>
-        </article>
+        </NuxtLinkrticle>
 
-        <article class="blog-post">
+        <NuxtLinkrticle class="blog-post">
           <h2 class="blog-post-title mb-1">Another blog post</h2>
           <p class="blog-post-meta">
-            December 23, 2020 by <a href="#">Jacob</a>
+            December 23, 2020 by <NuxtLink to="#">Jacob</NuxtLink>
           </p>
 
           <p>
@@ -300,12 +305,12 @@
             slightly shorter version of the other highly repetitive body text
             used throughout.
           </p>
-        </article>
+        </NuxtLinkrticle>
 
-        <article class="blog-post">
+        <NuxtLinkrticle class="blog-post">
           <h2 class="blog-post-title mb-1">New feature</h2>
           <p class="blog-post-meta">
-            December 14, 2020 by <a href="#">Chris</a>
+            December 14, 2020 by <NuxtLink to="#">Chris</NuxtLink>
           </p>
 
           <p>
@@ -325,11 +330,15 @@
             slightly shorter version of the other highly repetitive body text
             used throughout.
           </p>
-        </article>
+        </NuxtLinkrticle>
 
         <nav class="blog-pagination" aria-label="Pagination">
-          <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
-          <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
+          <NuxtLink class="btn btn-outline-primary rounded-pill" to="#"
+            >Older</NuxtLink
+          >
+          <NuxtLink class="btn btn-outline-secondary rounded-pill disabled"
+            >Newer</NuxtLink
+          >
         </nav>
       </div>
 
@@ -347,27 +356,27 @@
           <div class="p-4">
             <h4 class="fst-italic">Archives</h4>
             <ol class="list-unstyled mb-0">
-              <li><a href="#">March 2021</a></li>
-              <li><a href="#">February 2021</a></li>
-              <li><a href="#">January 2021</a></li>
-              <li><a href="#">December 2020</a></li>
-              <li><a href="#">November 2020</a></li>
-              <li><a href="#">October 2020</a></li>
-              <li><a href="#">September 2020</a></li>
-              <li><a href="#">August 2020</a></li>
-              <li><a href="#">July 2020</a></li>
-              <li><a href="#">June 2020</a></li>
-              <li><a href="#">May 2020</a></li>
-              <li><a href="#">April 2020</a></li>
+              <li><NuxtLink to="#">March 2021</NuxtLink></li>
+              <li><NuxtLink to="#">February 2021</NuxtLink></li>
+              <li><NuxtLink to="#">January 2021</NuxtLink></li>
+              <li><NuxtLink to="#">December 2020</NuxtLink></li>
+              <li><NuxtLink to="#">November 2020</NuxtLink></li>
+              <li><NuxtLink to="#">October 2020</NuxtLink></li>
+              <li><NuxtLink to="#">September 2020</NuxtLink></li>
+              <li><NuxtLink to="#">August 2020</NuxtLink></li>
+              <li><NuxtLink to="#">July 2020</NuxtLink></li>
+              <li><NuxtLink to="#">June 2020</NuxtLink></li>
+              <li><NuxtLink to="#">May 2020</NuxtLink></li>
+              <li><NuxtLink to="#">April 2020</NuxtLink></li>
             </ol>
           </div>
 
           <div class="p-4">
             <h4 class="fst-italic">Elsewhere</h4>
             <ol class="list-unstyled">
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Facebook</a></li>
+              <li><NuxtLink to="#">GitHub</NuxtLink></li>
+              <li><NuxtLink to="#">Twitter</NuxtLink></li>
+              <li><NuxtLink to="#">Facebook</NuxtLink></li>
             </ol>
           </div>
         </div>

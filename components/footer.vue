@@ -2,11 +2,11 @@
   <footer class="blog-footer">
     <p>
       Blog template built for
-      <a href="https://getbootstrap.com/">Bootstrap</a> by
-      <a href="https://twitter.com/mdo">@mdo</a>.
+      <NuxtLink to="https://getbootstrap.com/">Bootstrap</NuxtLink> by
+      <NuxtLink to="https://twitter.com/mdo">@mdo</NuxtLink>.
     </p>
     <p>
-      <a href="#">Back to top</a>
+      <NuxtLink to="#">Back to top</NuxtLink>
     </p>
   </footer>
 </template>
