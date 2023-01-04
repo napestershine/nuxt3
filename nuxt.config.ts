@@ -1,3 +1,5 @@
+import eslintPlugin from "vite-plugin-eslint";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   css: [
@@ -14,4 +16,10 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/google-fonts"],
   components: true,
   ssr: true,
+  nitro: {
+    compressPublicAssets: true,
+  },
+  vite: {
+    plugins: [eslintPlugin()],
+  },
 });
