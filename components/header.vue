@@ -7,7 +7,7 @@
         </div>
         <div class="col-4 text-center">
           <NuxtLink class="blog-header-logo text-dark" to="/">
-            GoFooddy
+            Recipies Archives
           </NuxtLink>
         </div>
         <div class="col-4 d-flex justify-content-end align-items-center">
