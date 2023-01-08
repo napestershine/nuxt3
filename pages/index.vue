@@ -1,28 +1,6 @@
 <template>
   <main class="container">
-    <div class="section-1">
-      <h2>Popular Recipies</h2>
-      <p>
-        Find our most popular and most trending vegan recipes that are a
-        favorite with many of our readers.
-      </p>
-      <div v-for="n in 4" class="row justify-content-evenly">
-        <div v-for="n in 4" class="card mb-1" style="width: 18rem">
-          <img
-            src="https://picsum.photos/140"
-            class="card-img-top"
-            alt="some text"
-          />
-          <div class="card-img-overlay">recipe time</div>
-          <div class="card-body">
-            <p class="card-title">Recipe category</p>
-            <h5>
-              <NuxtLink to="#"> Recipe Title </NuxtLink>
-            </h5>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Recipies />
     <div class="section-2">
       <h3>Get my secrets to Great vegan recipes</h3>
       <p>Sign up for my free newsletter</p>
@@ -34,24 +12,27 @@
             type="text"
             class="form-control"
             aria-describedby="nameHelp"
-          />
+          >
         </div>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            >Email Address</label
-          >
+          <label
+            for="exampleInputEmail1"
+            class="form-label"
+          >Email Address</label>
           <input
             id="exampleInputEmail1"
             type="email"
             class="form-control"
             aria-describedby="emailHelp"
-          />
+          >
           <div id="emailHelp" class="form-text">
             We'll never share your email with anyone else.
           </div>
         </div>
 
-        <button type="submit" class="btn btn-primary">Sign up</button>
+        <button type="submit" class="btn btn-primary">
+          Sign up
+        </button>
       </form>
     </div>
     <div class="section-3">
@@ -66,12 +47,18 @@
             src="https://picsum.photos/140"
             class="card-img-top"
             alt="some text"
-          />
-          <div class="card-img-overlay">recipe time</div>
+          >
+          <div class="card-img-overlay">
+            recipe time
+          </div>
           <div class="card-body">
-            <p class="card-title">Recipe category</p>
+            <p class="card-title">
+              Recipe category
+            </p>
             <h5>
-              <NuxtLink to="#"> Recipe Title </NuxtLink>
+              <NuxtLink to="#">
+                Recipe Title
+              </NuxtLink>
             </h5>
           </div>
         </div>
@@ -85,11 +72,13 @@
               src="https://picsum.photos/600/340"
               class="img-fluid rounded-start"
               alt="..."
-            />
+            >
           </div>
           <div class="col-md-6">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">
+                Card title
+              </h5>
               <p class="card-text">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -109,9 +98,15 @@
         role="group"
         aria-label="Basic mixed styles example"
       >
-        <button type="button" class="btn btn-danger">Left</button>
-        <button type="button" class="btn btn-warning">Middle</button>
-        <button type="button" class="btn btn-success">Right</button>
+        <button type="button" class="btn btn-danger">
+          Left
+        </button>
+        <button type="button" class="btn btn-warning">
+          Middle
+        </button>
+        <button type="button" class="btn btn-success">
+          Right
+        </button>
       </div>
     </div>
     <div class="section-6">
@@ -121,15 +116,17 @@
         want.
       </p>
       <div class="row row-cols-1 row-cols-md-4 g-4">
-        <div class="col" v-for="n in 4">
+        <div v-for="n in 4" class="col">
           <div class="card">
             <img
               src="https://picsum.photos/140"
               class="card-img-top"
               alt="..."
-            />
+            >
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">
+                Card title
+              </h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -146,16 +143,18 @@
         Find some popular Indian breakfast recipes that are both a comfort food
         and favored by many of us.
       </p>
-      <div class="row row-cols-1 row-cols-md-4 g-4" v-for="n in 2">
-        <div class="col" v-for="n in 4">
+      <div v-for="n in 2" class="row row-cols-1 row-cols-md-4 g-4">
+        <div v-for="n in 4" class="col">
           <div class="card">
             <img
               src="https://picsum.photos/140"
               class="card-img-top"
               alt="..."
-            />
+            >
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">
+                Card title
+              </h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -174,11 +173,13 @@
               src="https://picsum.photos/600/340"
               class="img-fluid rounded-start"
               alt="..."
-            />
+            >
           </div>
           <div class="col-md-6">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">
+                Card title
+              </h5>
               <p class="card-text">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -198,16 +199,18 @@
         Find some popular Indian breakfast recipes that are both a comfort food
         and favored by many of us.
       </p>
-      <div class="row row-cols-1 row-cols-md-4 g-4" v-for="n in 2">
-        <div class="col" v-for="n in 4">
+      <div v-for="n in 2" class="row row-cols-1 row-cols-md-4 g-4">
+        <div v-for="n in 4" class="col">
           <div class="card">
             <img
               src="https://picsum.photos/140"
               class="card-img-top"
               alt="..."
-            />
+            >
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">
+                Card title
+              </h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -224,16 +227,18 @@
         Find some popular Indian breakfast recipes that are both a comfort food
         and favored by many of us.
       </p>
-      <div class="row row-cols-1 row-cols-md-4 g-4" v-for="n in 2">
-        <div class="col" v-for="n in 4">
+      <div v-for="n in 2" class="row row-cols-1 row-cols-md-4 g-4">
+        <div v-for="n in 4" class="col">
           <div class="card">
             <img
               src="https://picsum.photos/140"
               class="card-img-top"
               alt="..."
-            />
+            >
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">
+                Card title
+              </h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -250,16 +255,18 @@
         Find some popular Indian breakfast recipes that are both a comfort food
         and favored by many of us.
       </p>
-      <div class="row row-cols-1 row-cols-md-4 g-4" v-for="n in 2">
-        <div class="col" v-for="n in 4">
+      <div v-for="n in 2" class="row row-cols-1 row-cols-md-4 g-4">
+        <div v-for="n in 4" class="col">
           <div class="card">
             <img
               src="https://picsum.photos/140"
               class="card-img-top"
               alt="..."
-            />
+            >
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">
+                Card title
+              </h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -276,16 +283,18 @@
         Find some popular Indian breakfast recipes that are both a comfort food
         and favored by many of us.
       </p>
-      <div class="row row-cols-1 row-cols-md-4 g-4" v-for="n in 2">
-        <div class="col" v-for="n in 4">
+      <div v-for="n in 2" class="row row-cols-1 row-cols-md-4 g-4">
+        <div v-for="n in 4" class="col">
           <div class="card">
             <img
               src="https://picsum.photos/140"
               class="card-img-top"
               alt="..."
-            />
+            >
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">
+                Card title
+              </h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -302,16 +311,18 @@
         Find some popular Indian breakfast recipes that are both a comfort food
         and favored by many of us.
       </p>
-      <div class="row row-cols-1 row-cols-md-4 g-4" v-for="n in 2">
-        <div class="col" v-for="n in 4">
+      <div v-for="n in 2" class="row row-cols-1 row-cols-md-4 g-4">
+        <div v-for="n in 4" class="col">
           <div class="card">
             <img
               src="https://picsum.photos/140"
               class="card-img-top"
               alt="..."
-            />
+            >
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">
+                Card title
+              </h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -328,16 +339,18 @@
         Find some popular Indian breakfast recipes that are both a comfort food
         and favored by many of us.
       </p>
-      <div class="row row-cols-1 row-cols-md-4 g-4" v-for="n in 2">
-        <div class="col" v-for="n in 4">
+      <div v-for="n in 2" class="row row-cols-1 row-cols-md-4 g-4">
+        <div v-for="n in 4" class="col">
           <div class="card">
             <img
               src="https://picsum.photos/140"
               class="card-img-top"
               alt="..."
-            />
+            >
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">
+                Card title
+              </h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -354,16 +367,18 @@
         Find some popular Indian breakfast recipes that are both a comfort food
         and favored by many of us.
       </p>
-      <div class="row row-cols-1 row-cols-md-4 g-4" v-for="n in 2">
-        <div class="col" v-for="n in 4">
+      <div v-for="n in 2" class="row row-cols-1 row-cols-md-4 g-4">
+        <div v-for="n in 4" class="col">
           <div class="card">
             <img
               src="https://picsum.photos/140"
               class="card-img-top"
               alt="..."
-            />
+            >
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">
+                Card title
+              </h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -380,16 +395,18 @@
         Find some popular Indian breakfast recipes that are both a comfort food
         and favored by many of us.
       </p>
-      <div class="row row-cols-1 row-cols-md-4 g-4" v-for="n in 2">
-        <div class="col" v-for="n in 4">
+      <div v-for="n in 2" class="row row-cols-1 row-cols-md-4 g-4">
+        <div v-for="n in 4" class="col">
           <div class="card">
             <img
               src="https://picsum.photos/140"
               class="card-img-top"
               alt="..."
-            />
+            >
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">
+                Card title
+              </h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -406,16 +423,18 @@
         Find some popular Indian breakfast recipes that are both a comfort food
         and favored by many of us.
       </p>
-      <div class="row row-cols-1 row-cols-md-4 g-4" v-for="n in 2">
-        <div class="col" v-for="n in 4">
+      <div v-for="n in 2" class="row row-cols-1 row-cols-md-4 g-4">
+        <div v-for="n in 4" class="col">
           <div class="card">
             <img
               src="https://picsum.photos/140"
               class="card-img-top"
               alt="..."
-            />
+            >
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">
+                Card title
+              </h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -432,16 +451,18 @@
         Find some popular Indian breakfast recipes that are both a comfort food
         and favored by many of us.
       </p>
-      <div class="row row-cols-1 row-cols-md-4 g-4" v-for="n in 2">
-        <div class="col" v-for="n in 4">
+      <div v-for="n in 2" class="row row-cols-1 row-cols-md-4 g-4">
+        <div v-for="n in 4" class="col">
           <div class="card">
             <img
               src="https://picsum.photos/140"
               class="card-img-top"
               alt="..."
-            />
+            >
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">
+                Card title
+              </h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -458,16 +479,18 @@
         Find some popular Indian breakfast recipes that are both a comfort food
         and favored by many of us.
       </p>
-      <div class="row row-cols-1 row-cols-md-4 g-4" v-for="n in 2">
-        <div class="col" v-for="n in 4">
+      <div v-for="n in 2" class="row row-cols-1 row-cols-md-4 g-4">
+        <div v-for="n in 4" class="col">
           <div class="card">
             <img
               src="https://picsum.photos/140"
               class="card-img-top"
               alt="..."
-            />
+            >
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">
+                Card title
+              </h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -484,16 +507,18 @@
         Find some popular Indian breakfast recipes that are both a comfort food
         and favored by many of us.
       </p>
-      <div class="row row-cols-1 row-cols-md-4 g-4" v-for="n in 2">
-        <div class="col" v-for="n in 4">
+      <div v-for="n in 2" class="row row-cols-1 row-cols-md-4 g-4">
+        <div v-for="n in 4" class="col">
           <div class="card">
             <img
               src="https://picsum.photos/140"
               class="card-img-top"
               alt="..."
-            />
+            >
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">
+                Card title
+              </h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -510,16 +535,18 @@
         Find some popular Indian breakfast recipes that are both a comfort food
         and favored by many of us.
       </p>
-      <div class="row row-cols-1 row-cols-md-4 g-4" v-for="n in 2">
-        <div class="col" v-for="n in 4">
+      <div v-for="n in 2" class="row row-cols-1 row-cols-md-4 g-4">
+        <div v-for="n in 4" class="col">
           <div class="card">
             <img
               src="https://picsum.photos/140"
               class="card-img-top"
               alt="..."
-            />
+            >
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">
+                Card title
+              </h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
